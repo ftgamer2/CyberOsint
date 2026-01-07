@@ -1,6 +1,9 @@
-CyberOSINT 🔍
+Here's the fixed GitHub README with proper Markdown formatting for the banner and table:
 
-Ultimate Termux OSINT Toolkit | No API Keys Required
+```markdown
+# CyberOSINT 🔍
+
+**Ultimate Termux OSINT Toolkit | No API Keys Required**
 
 <p align="center">
   <img src="https://lucifer-nexus-files.pages.dev/img/cba7f728-7d9d-4700-8104-583d2f1a8777.jpg" alt="CyberOSINT Banner" width="800">
@@ -22,45 +25,46 @@ Ultimate Termux OSINT Toolkit | No API Keys Required
 
 ---
 
-🌟 Features
+## 🌟 Features
 
-🎯 21+ Powerful OSINT Modules
+### 🎯 21+ Powerful OSINT Modules
 
-Module Description Icon
-IP Tracker Real-time IP geolocation & ISP information 🌐
-Username Search Check username across 50+ social platforms 👤
-Email Investigator Email analysis & breach checking 📧
-Instagram Advanced Profile analysis & data extraction 📷
-Domain Intelligence WHOIS, DNS, SSL analysis 🔗
-Image EXIF Analyzer Extract metadata from images 📸
-Phone Tracker Phone number information & carrier lookup 📱
-Phone to Name Reverse phone number lookup 👤➡️📱
-IFSC Code Lookup Indian bank IFSC code information 🏦
-Google Dorks Generate advanced search queries 🔎
-Subdomain Enumerator Discover subdomains 🌐🔍
-Reverse Image Search Search images across engines 🖼️🔍
-Email Breach Checker Check data breach exposure 🔓
-Password Strength Security analysis & hash generation 🔐
-Wayback Machine Historical website snapshots 🕰️
-DNSDumpster Tool DNS reconnaissance 🛰️
-Sherlock Search Username search across 50+ sites 🕵️
-Technology Detector Website tech stack analysis 🔧
-AbuseIPDB Checker IP reputation checking 🛡️
+| Module | Description | Icon |
+|--------|-------------|------|
+| **IP Tracker** | Real-time IP geolocation & ISP information | 🌐 |
+| **Username Search** | Check username across 50+ social platforms | 👤 |
+| **Email Investigator** | Email analysis & breach checking | 📧 |
+| **Instagram Advanced** | Profile analysis & data extraction | 📷 |
+| **Domain Intelligence** | WHOIS, DNS, SSL analysis | 🔗 |
+| **Image EXIF Analyzer** | Extract metadata from images | 📸 |
+| **Phone Tracker** | Phone number information & carrier lookup | 📱 |
+| **Phone to Name** | Reverse phone number lookup | 👤➡️📱 |
+| **IFSC Code Lookup** | Indian bank IFSC code information | 🏦 |
+| **Google Dorks** | Generate advanced search queries | 🔎 |
+| **Subdomain Enumerator** | Discover subdomains | 🌐🔍 |
+| **Reverse Image Search** | Search images across engines | 🖼️🔍 |
+| **Email Breach Checker** | Check data breach exposure | 🔓 |
+| **Password Strength** | Security analysis & hash generation | 🔐 |
+| **Wayback Machine** | Historical website snapshots | 🕰️ |
+| **DNSDumpster Tool** | DNS reconnaissance | 🛰️ |
+| **Sherlock Search** | Username search across 50+ sites | 🕵️ |
+| **Technology Detector** | Website tech stack analysis | 🔧 |
+| **AbuseIPDB Checker** | IP reputation checking | 🛡️ |
 
-✨ Key Advantages
+### ✨ Key Advantages
 
-· ✅ No API Keys Required - All modules work without external APIs
-· ✅ Termux Optimized - Designed specifically for Android Termux
-· ✅ Beautiful UI - Colorful terminal interface with animations
-· ✅ Auto-Save Reports - All results saved in organized directories
-· ✅ Fast & Efficient - Multi-threaded operations for speed
-· ✅ Privacy Focused - No data logging, runs locally
+- ✅ **No API Keys Required** - All modules work without external APIs
+- ✅ **Termux Optimized** - Designed specifically for Android Termux
+- ✅ **Beautiful UI** - Colorful terminal interface with animations
+- ✅ **Auto-Save Reports** - All results saved in organized directories
+- ✅ **Fast & Efficient** - Multi-threaded operations for speed
+- ✅ **Privacy Focused** - No data logging, runs locally
 
 ---
 
-🚀 Quick Start
+## 🚀 Quick Start
 
-One-Command Installation
+### One-Command Installation
 
 ```bash
 # Clone the repository
@@ -322,7 +326,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ```
 MIT License
-Copyright (c) 2024 ftgamer2
+Copyright (c) 2026 ftgamer2
 ```
 
 Permissions
