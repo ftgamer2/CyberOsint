@@ -1,6 +1,3 @@
-Here's the fixed GitHub README with proper Markdown formatting for the banner and table:
-
-```markdown
 # CyberOSINT 🔍
 
 **Ultimate Termux OSINT Toolkit | No API Keys Required**
