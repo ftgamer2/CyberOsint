@@ -1,9 +1,9 @@
-CyberOSINT 🔍
+# CyberOSINT 🔍
 
-Ultimate Termux OSINT Toolkit | All-in-One Intelligence Suite
+**Ultimate Termux OSINT Toolkit | All-in-One Intelligence Suite**
 
 <p align="center">
-  <img src="https://lucifer-nexus-files.pages.dev/img/cba7f728-7d9d-4700-8104-583d2f1a8777.jpg" alt="CyberOSINT Banner" width="800">
+  <img src="https://raw.githubusercontent.com/ftgamer2/CyberOsint/main/assets/banner.jpg" alt="CyberOSINT Banner" width="800">
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@ Ultimate Termux OSINT Toolkit | All-in-One Intelligence Suite
   <img src="https://img.shields.io/badge/Python-3.8+-yellow" alt="Python">
   <img src="https://img.shields.io/badge/Modules-25+-orange" alt="Modules">
   <img src="https://img.shields.io/badge/License-MIT-red" alt="License">
-  <img src="https://img.shields.io/github/stars/ftgamer2/CyberOSINT?style=social" alt="Stars">
+  <img src="https://img.shields.io/github/stars/ftgamer2/CyberOsint?style=social" alt="Stars">
 </p>
 
 <p align="center">
@@ -20,83 +20,86 @@ Ultimate Termux OSINT Toolkit | All-in-One Intelligence Suite
   <em>Uncover digital footprints, analyze data, and conduct reconnaissance - All from your Android device</em>
 </p>
 
----
+<hr>
 
-🔥 V3.0 Update - What's New?
+## 🔥 **V3.0 Update - What's New?**
 
-🚀 Three Powerful New Modules:
+### **🚀 Three Powerful New Modules:**
 
-1. 📱 Phone Number Details Lookup
-   · Complete phone number information
-   · Name, address, father name, circle details
-   · Alternative mobile numbers
-   · Customized with FTGAMER branding
-2. 🚗 Vehicle RC Information
-   · Dual API Integration for maximum accuracy
-   · Comprehensive vehicle ownership details
-   · Insurance, registration, RTO information
-   · Custom owner name (FTGAMER)
-3. 💣 SMS/Call Bomber (Educational Use Only)
-   · Multiple service bombing
-   · Call, WhatsApp, and SMS capabilities
-   · Detailed success/failure statistics
-   · WITH STRONG LEGAL WARNINGS
+1. **📱 Phone Number Details Lookup**
+   - Complete phone number information
+   - Name, address, father name, circle details
+   - Alternative mobile numbers
+   - Customized with FTGAMER branding
 
----
+2. **🚗 Vehicle RC Information**
+   - **Dual API Integration** for maximum accuracy
+   - Comprehensive vehicle ownership details
+   - Insurance, registration, RTO information
+   - Custom owner name (FTGAMER)
 
-🌟 Features
+3. **💣 SMS/Call Bomber (Educational Use Only)**
+   - Multiple service bombing
+   - Call, WhatsApp, and SMS capabilities
+   - Detailed success/failure statistics
+   - **WITH STRONG LEGAL WARNINGS**
 
-25+ Powerful OSINT Modules
+<hr>
 
-# Module Description Status
-1 IP Tracker Real-time IP geolocation & ISP information ✅
-2 Username Search Check username across 50+ social platforms ✅
-3 Email Investigator Email analysis & breach checking ✅
-4 Instagram Advanced Profile analysis & data extraction ✅
-5 Domain Intelligence WHOIS, DNS, SSL analysis ✅
-6 Image EXIF Analyzer Extract metadata from images ✅
-7 Phone Tracker Phone number info & carrier lookup ✅
-8 Phone to Name Reverse phone number lookup ✅
-9 IFSC Code Lookup Indian bank IFSC code information ✅
-10 Google Dorks Generate advanced search queries ✅
-11 Subdomain Enumerator Discover subdomains ✅
-12 Reverse Image Search Search images across engines ✅
-13 Email Breach Checker Check data breach exposure ✅
-14 Password Strength Security analysis & hash generation ✅
-15 Wayback Machine Historical website snapshots ✅
-16 DNSDumpster Tool DNS reconnaissance ✅
-17 Sherlock Search Username search across 50+ sites ✅
-18 Technology Detector Website tech stack analysis ✅
-19 AbuseIPDB Checker IP reputation checking ✅
-20 Phone Number Details Complete phone information lookup 🆕
-21 Vehicle RC Info Dual-API vehicle registration check 🆕
-22 SMS/Call Bomber Multi-service testing tool 🆕
-23 View Reports Browse saved investigation reports ✅
-24 Install Dependencies One-click setup for all requirements ✅
+## 🌟 **Features**
 
-✨ Key Advantages
+### **25+ Powerful OSINT Modules**
 
-· 25+ Modules - Most comprehensive Termux OSINT toolkit
-· No API Keys Required - Works without external APIs
-· Termux Optimized - Designed specifically for Android Termux
-· Beautiful UI - Colorful terminal interface with dynamic ASCII banner
-· Auto-Save Reports - All results saved in organized directories
-· Multi-Threaded - Fast operations with parallel processing
-· Privacy Focused - No data logging, runs locally
-· Educational Focus - Perfect for learning OSINT techniques
+| # | Module | Description | Status |
+|---|--------|-------------|--------|
+| 1 | IP Tracker | Real-time IP geolocation & ISP information | ✅ |
+| 2 | Username Search | Check username across 50+ social platforms | ✅ |
+| 3 | Email Investigator | Email analysis & breach checking | ✅ |
+| 4 | Instagram Advanced | Profile analysis & data extraction | ✅ |
+| 5 | Domain Intelligence | WHOIS, DNS, SSL analysis | ✅ |
+| 6 | Image EXIF Analyzer | Extract metadata from images | ✅ |
+| 7 | Phone Tracker | Phone number info & carrier lookup | ✅ |
+| 8 | Phone to Name | Reverse phone number lookup | ✅ |
+| 9 | IFSC Code Lookup | Indian bank IFSC code information | ✅ |
+| 10 | Google Dorks | Generate advanced search queries | ✅ |
+| 11 | Subdomain Enumerator | Discover subdomains | ✅ |
+| 12 | Reverse Image Search | Search images across engines | ✅ |
+| 13 | Email Breach Checker | Check data breach exposure | ✅ |
+| 14 | Password Strength | Security analysis & hash generation | ✅ |
+| 15 | Wayback Machine | Historical website snapshots | ✅ |
+| 16 | DNSDumpster Tool | DNS reconnaissance | ✅ |
+| 17 | Sherlock Search | Username search across 50+ sites | ✅ |
+| 18 | Technology Detector | Website tech stack analysis | ✅ |
+| 19 | AbuseIPDB Checker | IP reputation checking | ✅ |
+| 20 | Phone Number Details | Complete phone information lookup | 🆕 |
+| 21 | Vehicle RC Info | Dual-API vehicle registration check | 🆕 |
+| 22 | SMS/Call Bomber | Multi-service testing tool | 🆕 |
+| 23 | View Reports | Browse saved investigation reports | ✅ |
+| 24 | Install Dependencies | One-click setup for all requirements | ✅ |
 
----
+### **✨ Key Advantages**
 
-🚀 Quick Start
+- **25+ Modules** - Most comprehensive Termux OSINT toolkit
+- **No API Keys Required** - Works without external APIs
+- **Termux Optimized** - Designed specifically for Android Termux
+- **Beautiful UI** - Colorful terminal interface with dynamic ASCII banner
+- **Auto-Save Reports** - All results saved in organized directories
+- **Multi-Threaded** - Fast operations with parallel processing
+- **Privacy Focused** - No data logging, runs locally
+- **Educational Focus** - Perfect for learning OSINT techniques
 
-One-Command Installation
+<hr>
+
+## 🚀 **Quick Start**
+
+### **One-Command Installation**
 
 ```bash
 # Clone the repository
-git clone https://github.com/ftgamer2/CyberOSINT.git
+git clone https://github.com/ftgamer2/CyberOsint.git
 
 # Navigate to directory
-cd CyberOSINT
+cd CyberOsint
 
 # Run the tool
 python cyberosint.py
@@ -129,7 +132,7 @@ pip install requests beautifulsoup4 phonenumbers python-whois dnspython Pillow
 python cyberosint.py
 ```
 
----
+<hr>
 
 📱 Usage
 
@@ -137,11 +140,11 @@ Starting the Tool
 
 ```bash
 # After cloning
-cd CyberOSINT
+cd CyberOsint
 python cyberosint.py
 
 # Or create an alias in .bashrc
-echo "alias cyberosint='cd ~/CyberOSINT && python cyberosint.py'" >> ~/.bashrc
+echo "alias cyberosint='cd ~/CyberOsint && python cyberosint.py'" >> ~/.bashrc
 source ~/.bashrc
 cyberosint
 ```
@@ -187,7 +190,7 @@ All reports are automatically saved to organized directories:
 ```
 ~/storage/shared/OSINT_Reports/
 OR
-~/CyberOSINT/OSINT_Reports/
+~/CyberOsint/OSINT_Reports/
 ```
 
 Report Categories:
@@ -208,7 +211,7 @@ Formats:
 · TXT for quick viewing
 · Organized by date and module
 
----
+<hr>
 
 🛠️ Modules Overview
 
@@ -281,17 +284,19 @@ Security Tools
 · Email breach checking
 · Security header analysis
 
----
+<hr>
 
 📁 Project Structure
 
 ```
-CyberOSINT/
+CyberOsint/
 ├── cyberosint.py           # Main script (25 modules)
 ├── setup.sh               # Installation script (if needed)
 ├── requirements.txt       # Python dependencies
 ├── README.md             # This documentation
 ├── .gitignore           # Git ignore rules
+├── assets/
+│   └── banner.jpg       # Repository banner
 └── OSINT_Reports/       # Auto-generated reports
     ├── IP_*.json
     ├── USERNAME_*.json
@@ -300,7 +305,7 @@ CyberOSINT/
     └── BOMBING_*.json
 ```
 
----
+<hr>
 
 🎨 Terminal Banner
 
@@ -327,7 +332,7 @@ Dynamic Features:
 · Multiple display modes (lolcat, quick)
 · Center alignment for all screen sizes
 
----
+<hr>
 
 ⚙️ Technical Details
 
@@ -374,7 +379,7 @@ Existing APIs:
 · Various public APIs for validation
 · No API keys required for core functionality
 
----
+<hr>
 
 🤝 Contributing
 
@@ -400,7 +405,7 @@ Development Guidelines
 · Update documentation if needed
 · Include legal disclaimers for new modules
 
----
+<hr>
 
 ⚠️ CRITICAL LEGAL & ETHICAL USE
 
@@ -438,7 +443,7 @@ The author (ftgamer2) is NOT RESPONSIBLE for any misuse of this tool. Users must
 
 By using this tool, you agree to these terms and accept full responsibility for your actions.
 
----
+<hr>
 
 📜 License
 
@@ -466,7 +471,7 @@ Limitations
 · No liability
 · No warranty
 
----
+<hr>
 
 🙏 Acknowledgments
 
@@ -501,15 +506,13 @@ If you find this tool useful, please:
 · 🔄 Share with others
 · 📖 Follow for updates
 
----
+<hr>
 
 📞 Contact & Support
 
 · GitHub: ftgamer2
-· Repository: CyberOSINT
+· Repository: CyberOsint
 · Issues: GitHub Issues
-
----
 
 <p align="center">
   <strong>Made with ❤️ by ftgamer2</strong><br>
@@ -517,7 +520,7 @@ If you find this tool useful, please:
   <img src="https://komarev.com/ghpvc/?username=ftgamer2&label=Repository+Views&color=blue&style=flat" alt="Repository Views">
 </p>
 
----
+<hr>
 
 ⭐ Star this repo if you find it useful! ⭐
 
