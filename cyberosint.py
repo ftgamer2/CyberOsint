@@ -2,7 +2,7 @@
 """
 TERMUX OSINT ULTIMATE - All-in-One OSINT Toolkit
 Author: ftgamerv2 | GitHub: ftgamer2
-Version: V2.0 - Ultimate No-API Edition
+Version: V3.0 - Ultimate All-in-One Edition
 """
 
 import os
@@ -35,32 +35,9 @@ def get_term_size():
         return 80, 24
 
 def print_logo():
-    """Print compact logo with dynamic colors"""
-    
-    logo = [
-        "################&&&&&&&&&&####&#######&&##&#######",
-        "############&&&&#BPGBBB###&&&&&&#####&############",
-        "###########&#G5J~::.:::^~?GBBBBB&####&#B##########",
-        "##########&G!.. ..........~P##BP#&####&&##########",
-        "#########&P^ ..............!B###&#################",
-        "########&&Y:.............^!?P&&&##################",
-        "#######&##7..........:^~!~~YG#&###################",
-        "######&#BB?^.::.:^~~~^:..:!G&&&&&&&&&&#####&######",
-        "######&BPGG5JJJ?^::......:.^~?J55PPB#&&&&&########",
-        "#######&###BGBGB!:................::^!7JG&&#######",
-        "#########&&#&&GY7^......................:7B&######",
-        "###########&#7:..:::......................~#&#####",
-        "###########&Y.:............................5&#####",
-        "##########&&?::::........................:.~B&####",
-        "###########&P:::::........................:.~B&###",
-        "############&J::::.........................:.!#&#&",
-        "############&5::..:::.......................:.Y&##",
-        "###########&#!::...:::...............::!~.....~#&#",
-        "###########&B::..:^:::...............::PB^.....5&#",
-        "###########&P.:.:^Y::................:?&&B!....^B&",
-        "&&&#######&&7...:!B:................:~B&#&#^....P&",
-        "BB#&######&P...::?Y.................:?&###&?....7&"
-    ]
+    """Print new ASCII banner"""
+    banner = r"""
+    """
     
     # Clear screen
     os.system('clear')
@@ -68,13 +45,26 @@ def print_logo():
     # Get terminal size
     cols, rows = get_term_size()
     
+    # Split banner into lines
+    lines = banner.strip().split('\n')
+    
     # Center vertically
-    v_padding = max(0, (rows - len(logo)) // 2)
+    v_padding = max(0, (rows - len(lines)) // 2)
     for _ in range(v_padding):
         print()
     
     # Print with dynamic colors
-    for i, line in enumerate(logo):
+    colors = [
+        rgb(255, 0, 0),    # Red
+        rgb(255, 165, 0),  # Orange
+        rgb(255, 255, 0),  # Yellow
+        rgb(0, 255, 0),    # Green
+        rgb(0, 191, 255),  # Light Blue
+        rgb(0, 0, 255),    # Blue
+        rgb(148, 0, 211)   # Purple
+    ]
+    
+    for i, line in enumerate(lines):
         line = line.rstrip()
         if not line:
             continue
@@ -82,61 +72,40 @@ def print_logo():
         # Center horizontally
         h_padding = max(0, (cols - len(line)) // 2)
         
-        # Create dynamic gradient
-        if cols < 60:  # Small terminal
-            # Solid color for visibility
-            color = rgb(255, 165, 0)  # Orange
-        else:
-            # Gradient from purple to cyan
-            progress = i / len(logo)
-            r = int(128 + 127 * progress)
-            g = int(64 + 191 * progress)
-            b = int(255 - 127 * progress)
-            color = rgb(r, g, b)
-        
+        # Cycle through colors
+        color = colors[i % len(colors)]
         reset = "\033[0m"
+        
         print(" " * h_padding + color + line + reset)
-        time.sleep(0.02)
+        time.sleep(0.01)
     
     print("\033[0m")  # Reset colors
 
 def print_random_logo():
-    """Print with random lolcat-like colors"""
-    
-    logo = [
-        "################&&&&&&&&&&####&#######&&##&#######",
-        "############&&&&#BPGBBB###&&&&&&#####&############",
-        "###########&#G5J~::.:::^~?GBBBBB&####&#B##########",
-        "##########&G!.. ..........~P##BP#&####&&##########",
-        "#########&P^ ..............!B###&#################",
-        "########&&Y:.............^!?P&&&##################",
-        "#######&##7..........:^~!~~YG#&###################",
-        "######&#BB?^.::.:^~~~^:..:!G&&&&&&&&&&#####&######",
-        "######&BPGG5JJJ?^::......:.^~?J55PPB#&&&&&########",
-        "#######&###BGBGB!:................::^!7JG&&#######",
-        "#########&&#&&GY7^......................:7B&######",
-        "###########&#7:..:::......................~#&#####",
-        "###########&Y.:............................5&#####",
-        "##########&&?::::........................:.~B&####",
-        "###########&P:::::........................:.~B&###",
-        "############&J::::.........................:.!#&#&",
-        "############&5::..:::.......................:.Y&##",
-        "###########&#!::...:::...............::!~.....~#&#",
-        "###########&B::..:^:::...............::PB^.....5&#",
-        "###########&P.:.:^Y::................:?&&B!....^B&",
-        "&&&#######&&7...:!B:................:~B&#&#^....P&",
-        "BB#&######&P...::?Y.................:?&###&?....7&"
-    ]
+    """Print with random colors"""
+    banner = r"""
+ $$$$$$\            $$\                            $$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\ $$$$$$$$\ 
+$$  __$$\           $$ |                          $$  __$$\ $$  __$$\ \_$$  _|$$$\  $$ |\__$$  __|
+$$ /  \__|$$\   $$\ $$$$$$$\   $$$$$$\   $$$$$$\  $$ /  $$ |$$ /  \__|  $$ |  $$$$\ $$ |   $$ |   
+$$ |      $$ |  $$ |$$  __$$\ $$  __$$\ $$  __$$\ $$ |  $$ |\$$$$$$\    $$ |  $$ $$\$$ |   $$ |   
+$$ |      $$ |  $$ |$$ |  $$ |$$$$$$$$ |$$ |  \__|$$ |  $$ | \____$$\   $$ |  $$ \$$$$ |   $$ |   
+$$ |  $$\ $$ |  $$ |$$ |  $$ |$$   ____|$$ |      $$ |  $$ |$$\   $$ |  $$ |  $$ |\$$$ |   $$ |   
+\$$$$$$  |\$$$$$$$ |$$$$$$$  |\$$$$$$$\ $$ |       $$$$$$  |\$$$$$$  |$$$$$$\ $$ | \$$ |   $$ |   
+ \______/  \____$$ |\_______/  \_______|\__|       \______/  \______/ \______|\__|  \__|   \__|   
+          $$\   $$ |                                                                              
+          \$$$$$$  |                                                                              
+           \______/                                                                               
+    """
     
     os.system('clear')
     cols, rows = get_term_size()
     
-    # Vertical centering
-    v_padding = max(0, (rows - len(logo)) // 2)
+    lines = banner.strip().split('\n')
+    v_padding = max(0, (rows - len(lines)) // 2)
     for _ in range(v_padding):
         print()
     
-    for i, line in enumerate(logo):
+    for i, line in enumerate(lines):
         line = line.rstrip()
         if not line:
             continue
@@ -151,45 +120,33 @@ def print_random_logo():
         # Center horizontally
         h_padding = max(0, (cols - len(line)) // 2)
         print(" " * h_padding + color + line + reset)
-        time.sleep(0.03)
+        time.sleep(0.02)
     
     print("\033[0m")
 
-# Minimal version for quick import
 def quick_logo():
     """Quick logo - minimal overhead"""
-    logo = [
-        "################&&&&&&&&&&####&#######&&##&#######",
-        "############&&&&#BPGBBB###&&&&&&#####&############",
-        "###########&#G5J~::.:::^~?GBBBBB&####&#B##########",
-        "##########&G!.. ..........~P##BP#&####&&##########",
-        "#########&P^ ..............!B###&#################",
-        "########&&Y:.............^!?P&&&##################",
-        "#######&##7..........:^~!~~YG#&###################",
-        "######&#BB?^.::.:^~~~^:..:!G&&&&&&&&&&#####&######",
-        "######&BPGG5JJJ?^::......:.^~?J55PPB#&&&&&########",
-        "#######&###BGBGB!:................::^!7JG&&#######",
-        "#########&&#&&GY7^......................:7B&######",
-        "###########&#7:..:::......................~#&#####",
-        "###########&Y.:............................5&#####",
-        "##########&&?::::........................:.~B&####",
-        "###########&P:::::........................:.~B&###",
-        "############&J::::.........................:.!#&#&",
-        "############&5::..:::.......................:.Y&##",
-        "###########&#!::...:::...............::!~.....~#&#",
-        "###########&B::..:^:::...............::PB^.....5&#",
-        "###########&P.:.:^Y::................:?&&B!....^B&",
-        "&&&#######&&7...:!B:................:~B&#&#^....P&",
-        "BB#&######&P...::?Y.................:?&###&?....7&"
-    ]
+    banner = r"""
+ $$$$$$\            $$\                            $$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\ $$$$$$$$\ 
+$$  __$$\           $$ |                          $$  __$$\ $$  __$$\ \_$$  _|$$$\  $$ |\__$$  __|
+$$ /  \__|$$\   $$\ $$$$$$$\   $$$$$$\   $$$$$$\  $$ /  $$ |$$ /  \__|  $$ |  $$$$\ $$ |   $$ |   
+$$ |      $$ |  $$ |$$  __$$\ $$  __$$\ $$  __$$\ $$ |  $$ |\$$$$$$\    $$ |  $$ $$\$$ |   $$ |   
+$$ |      $$ |  $$ |$$ |  $$ |$$$$$$$$ |$$ |  \__|$$ |  $$ | \____$$\   $$ |  $$ \$$$$ |   $$ |   
+$$ |  $$\ $$ |  $$ |$$ |  $$ |$$   ____|$$ |      $$ |  $$ |$$\   $$ |  $$ |  $$ |\$$$ |   $$ |   
+\$$$$$$  |\$$$$$$$ |$$$$$$$  |\$$$$$$$\ $$ |       $$$$$$  |\$$$$$$  |$$$$$$\ $$ | \$$ |   $$ |   
+ \______/  \____$$ |\_______/  \_______|\__|       \______/  \______/ \______|\__|  \__|   \__|   
+          $$\   $$ |                                                                              
+          \$$$$$$  |                                                                              
+           \______/                                                                               
+    """
     
     os.system('clear')
     cols = os.get_terminal_size().columns if hasattr(os, 'get_terminal_size') else 80
     
-    for line in logo:
+    for line in banner.strip().split('\n'):
         # Simple cyan color
         print(f"\033[36m{line.center(cols)}\033[0m")
-        time.sleep(0.02)
+        time.sleep(0.01)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
@@ -360,6 +317,379 @@ class CredentialsManager:
         conn.commit()
         conn.close()
         print_status(f"Credentials deleted for {service}", "success")
+
+# ========== NEW MODULE: PHONE NUMBER DETAILS LOOKUP ==========
+class PhoneNumberDetails:
+    def __init__(self):
+        self.api_url = "https://check-api-sigma.vercel.app"
+    
+    def lookup(self, phone_number=None):
+        """Lookup phone number details"""
+        clear()
+        printc("╔══════════════════════════════════════╗", "purple", True)
+        printc("║      PHONE NUMBER DETAILS LOOKUP     ║", "purple", True)
+        printc("╚══════════════════════════════════════╝", "purple")
+        print()
+        
+        if not phone_number:
+            phone_number = input(cprint("Enter phone number: ", "cyan")).strip()
+        
+        if not phone_number:
+            printc("Phone number required", "red")
+            return
+        
+        print_status(f"Looking up: {phone_number}", "loading")
+        
+        try:
+            response = requests.get(f"{self.api_url}/?num={phone_number}", timeout=10)
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                printc("\n" + "=" * 60, "green")
+                printc("📱 PHONE NUMBER DETAILS", "green", True)
+                printc("=" * 60, "green")
+                
+                if data.get('success'):
+                    results = data.get('result', [])
+                    if results:
+                        result = results[0]  # Take first result
+                        
+                        # Custom note
+                        printc("💬 Note: Maje Karo lala", "yellow", True)
+                        printc(f"📞 Phone: {result.get('mobile', phone_number)}", "cyan")
+                        printc(f"👤 Name: {result.get('name', 'N/A')}", "cyan")
+                        
+                        # Change owner name to FTGAMER
+                        owner_name = "FTGAMER"
+                        printc(f"👑 Owner: {owner_name}", "green", True)
+                        
+                        printc(f"👨 Father: {result.get('father_name', 'N/A')}", "cyan")
+                        printc(f"📱 Alt Mobile: {result.get('alt_mobile', 'N/A')}", "cyan")
+                        printc(f"📧 Email: {result.get('email', 'N/A')}", "cyan")
+                        printc(f"📍 Address: {result.get('address', 'N/A')}", "cyan")
+                        printc(f"🌍 Circle: {result.get('circle', 'N/A')}", "cyan")
+                        
+                        printc(f"\n📊 Status: {data.get('status', 'N/A')}", "yellow")
+                        
+                        metadata = data.get('metadata', {})
+                        printc(f"👨‍💻 Developer: {metadata.get('developer', 'N/A')}", "gray")
+                        printc(f"📅 Timestamp: {metadata.get('timestamp', 'N/A')}", "gray")
+                    else:
+                        printc("❌ No details found for this number", "red")
+                else:
+                    printc("❌ API returned unsuccessful", "red")
+                
+                printc("=" * 60, "green")
+                
+                save = input(cprint("\nSave result? (y/n): ", "yellow")).lower()
+                if save == 'y':
+                    self.save_result(phone_number, data)
+            else:
+                printc(f"❌ API Error: {response.status_code}", "red")
+                
+        except Exception as e:
+            printc(f"Error: {str(e)}", "red")
+    
+    def save_result(self, phone_number, data):
+        """Save phone number details"""
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"PHONE_DETAILS_{phone_number}_{timestamp}.json"
+        filepath = REPORTS_DIR / filename
+        
+        with open(filepath, 'w') as f:
+            json.dump({
+                'phone_number': phone_number,
+                'timestamp': datetime.now().isoformat(),
+                'result': data
+            }, f, indent=4)
+        
+        print_status(f"Result saved: {filepath}", "success")
+
+# ========== NEW MODULE: VEHICLE RC DETAILS ==========
+class VehicleRCInfo:
+    def __init__(self):
+        self.apis = [
+            ("Toji RC API", "http://toji-rc.vercel.app/api/?vehicle={}&key=MXTOJI"),
+            ("Tobi RC API", "http://Tobi-rc-api.vercel.app/?rc_number={}")
+        ]
+    
+    def lookup(self, vehicle_number=None):
+        """Lookup vehicle RC details from multiple APIs"""
+        clear()
+        printc("╔══════════════════════════════════════╗", "blue", True)
+        printc("║       VEHICLE RC INFORMATION         ║", "blue", True)
+        printc("╚══════════════════════════════════════╝", "blue")
+        print()
+        
+        if not vehicle_number:
+            vehicle_number = input(cprint("Enter vehicle number (KA01AB1234): ", "cyan")).strip().upper()
+        
+        if not vehicle_number:
+            printc("Vehicle number required", "red")
+            return
+        
+        print_status(f"Looking up: {vehicle_number}", "loading")
+        
+        all_results = []
+        
+        for api_name, api_url in self.apis:
+            printc(f"\n🔍 Checking {api_name}...", "cyan")
+            
+            try:
+                formatted_url = api_url.format(vehicle_number)
+                response = requests.get(formatted_url, timeout=10)
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    
+                    if data.get('success') or data.get('status') == 'success':
+                        printc(f"✅ Data found on {api_name}", "green")
+                        
+                        # Modify data for Toji API
+                        if api_name == "Toji RC API":
+                            if 'data' in data:
+                                # Change owner name to FTGAMER
+                                data['data']['owner_name'] = "FTGAMER"
+                                # Add custom note
+                                data['note'] = "Maje Karo lala"
+                        
+                        all_results.append({
+                            'api': api_name,
+                            'data': data
+                        })
+                        
+                        self.display_vehicle_data(api_name, data)
+                    else:
+                        printc(f"❌ No data on {api_name}", "red")
+                else:
+                    printc(f"❌ API Error {response.status_code} on {api_name}", "red")
+                    
+            except Exception as e:
+                printc(f"⚠️ Error with {api_name}: {str(e)[:50]}", "yellow")
+        
+        if all_results:
+            printc("\n" + "=" * 60, "green")
+            printc("📊 COMBINED VEHICLE INFORMATION", "green", True)
+            printc("=" * 60, "green")
+            
+            # Show comparison
+            for result in all_results:
+                printc(f"\n{result['api']}:", "yellow", True)
+                data = result['data']
+                
+                if 'data' in data:
+                    vehicle_data = data['data']
+                    printc(f"  Owner: {vehicle_data.get('owner_name', 'N/A')}", "cyan")
+                    printc(f"  Model: {vehicle_data.get('model_name', vehicle_data.get('Model Name', 'N/A'))}", "cyan")
+                    printc(f"  RTO: {vehicle_data.get('rto', vehicle_data.get('Registered RTO', 'N/A'))}", "cyan")
+                elif 'details' in data:
+                    vehicle_data = data['details']
+                    printc(f"  Owner: {vehicle_data.get('Owner Name', 'N/A')}", "cyan")
+                    printc(f"  Model: {vehicle_data.get('Model Name', 'N/A')}", "cyan")
+                    printc(f"  RTO: {vehicle_data.get('Registered RTO', 'N/A')}", "cyan")
+            
+            printc("=" * 60, "green")
+            
+            save = input(cprint("\nSave all results? (y/n): ", "yellow")).lower()
+            if save == 'y':
+                self.save_results(vehicle_number, all_results)
+        else:
+            printc("\n❌ No vehicle data found from any API", "red")
+    
+    def display_vehicle_data(self, api_name, data):
+        """Display vehicle data from specific API"""
+        printc(f"\n📋 {api_name} DETAILS:", "yellow", True)
+        printc("-" * 50, "yellow")
+        
+        if api_name == "Toji RC API":
+            if 'data' in data:
+                vehicle = data['data']
+                display_fields = [
+                    ('Vehicle Number', 'vehicle_number'),
+                    ('Owner Name', 'owner_name'),
+                    ('Father Name', 'father_name'),
+                    ('Model', 'model_name'),
+                    ('Maker Model', 'maker_model'),
+                    ('Vehicle Class', 'vehicle_class'),
+                    ('Fuel Type', 'fuel_type'),
+                    ('RTO Code', 'rto_code'),
+                    ('City', 'city'),
+                    ('Phone', 'phone'),
+                    ('Address', 'address'),
+                    ('Reg Date', 'reg_date'),
+                    ('Insurance Expiry', 'insurance_expiry'),
+                    ('Fitness Upto', 'fitness_upto'),
+                    ('Chassis No', 'chassis_no'),
+                    ('Engine No', 'engine_no'),
+                    ('Insurance Company', 'insurance_company')
+                ]
+                
+                for display_name, key in display_fields:
+                    if key in vehicle and vehicle[key]:
+                        value = vehicle[key]
+                        if display_name == 'Owner Name':
+                            value = "FTGAMER"
+                            printc(f"{display_name}: {value}", "green", True)
+                        else:
+                            printc(f"{display_name}: {value}", "cyan")
+                
+                if 'note' in data:
+                    printc(f"\n💬 Note: {data['note']}", "yellow")
+                
+                printc(f"\n👨‍💻 Developer: {data.get('developer', 'N/A')}", "gray")
+                
+        elif api_name == "Tobi RC API":
+            if 'details' in data:
+                vehicle = data['details']
+                display_fields = [
+                    ('Owner Name', 'Owner Name'),
+                    ('Father Name', 'Father\'s Name'),
+                    ('Model', 'Model Name'),
+                    ('Maker Model', 'Maker Model'),
+                    ('Vehicle Class', 'Vehicle Class'),
+                    ('Fuel Type', 'Fuel Type'),
+                    ('RTO', 'Registered RTO'),
+                    ('City', 'City Name'),
+                    ('Phone', 'Phone'),
+                    ('Address', 'Address'),
+                    ('Reg Date', 'Registration Date'),
+                    ('Insurance Expiry', 'Insurance Expiry'),
+                    ('Fitness Upto', 'Fitness Upto'),
+                    ('Insurance Company', 'Insurance Company')
+                ]
+                
+                for display_name, key in display_fields:
+                    if key in vehicle and vehicle[key]:
+                        printc(f"{display_name}: {vehicle[key]}", "cyan")
+                
+                printc(f"\n👨‍💻 Developer: {data.get('developer', 'N/A')}", "gray")
+        
+        printc("-" * 50, "yellow")
+    
+    def save_results(self, vehicle_number, results):
+        """Save vehicle RC results"""
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"VEHICLE_RC_{vehicle_number}_{timestamp}.json"
+        filepath = REPORTS_DIR / filename
+        
+        with open(filepath, 'w') as f:
+            json.dump({
+                'vehicle_number': vehicle_number,
+                'timestamp': datetime.now().isoformat(),
+                'results': results
+            }, f, indent=4)
+        
+        print_status(f"Results saved: {filepath}", "success")
+
+# ========== NEW MODULE: SMS/CALL BOMBER ==========
+class SMSBomber:
+    def __init__(self):
+        self.api_url = "https://toji-bomber.vercel.app/bomb"
+        self.key = "Tojizec"
+    
+    def start_bombing(self, phone_number=None):
+        """Start SMS/Call bombing"""
+        clear()
+        printc("╔══════════════════════════════════════╗", "red", True)
+        printc("║         SMS/CALL BOMBER              ║", "red", True)
+        printc("╚══════════════════════════════════════╝", "red")
+        print()
+        
+        printc("⚠️  LEGAL DISCLAIMER:", "red", True)
+        printc("This tool is for EDUCATIONAL purposes only!", "red")
+        printc("Use only on your own numbers or with EXPLICIT permission.", "red")
+        printc("Misuse may be ILLEGAL in your jurisdiction.", "red")
+        print()
+        
+        if not phone_number:
+            phone_number = input(cprint("Enter phone number: ", "cyan")).strip()
+        
+        if not phone_number:
+            printc("Phone number required", "red")
+            return
+        
+        confirm = input(cprint(f"Confirm bombing for {phone_number}? (y/n): ", "red")).lower()
+        if confirm != 'y':
+            printc("Bombing cancelled", "green")
+            return
+        
+        print_status(f"Starting bombing on: {phone_number}", "loading")
+        
+        try:
+            url = f"{self.api_url}?phone={phone_number}&key={self.key}"
+            response = requests.get(url, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                printc("\n" + "=" * 60, "green")
+                printc("💣 BOMBING REPORT", "green", True)
+                printc("=" * 60, "green")
+                
+                if data.get('success'):
+                    printc(f"✅ Bombing completed successfully!", "green", True)
+                    printc(f"📱 Target: {data.get('phone', phone_number)}", "cyan")
+                    
+                    stats = data.get('stats', {})
+                    printc(f"\n📊 STATISTICS:", "yellow", True)
+                    printc(f"  Total Attempted: {stats.get('total_attempted', 0)}", "cyan")
+                    printc(f"  Total Successful: {stats.get('total_successful', 0)}", "green")
+                    printc(f"  Total Failed: {stats.get('total_failed', 0)}", "red")
+                    printc(f"  Call Success: {stats.get('call_success', 0)}", "cyan")
+                    printc(f"  WhatsApp Success: {stats.get('whatsapp_success', 0)}", "green")
+                    printc(f"  SMS Success: {stats.get('sms_success', 0)}", "cyan")
+                    
+                    report = data.get('bombing_report', {})
+                    printc(f"\n📋 BOMBING TYPES:", "yellow", True)
+                    for bomb_type, status in report.items():
+                        if "✅" in str(status):
+                            printc(f"  {bomb_type}: {status}", "green")
+                        else:
+                            printc(f"  {bomb_type}: {status}", "red")
+                    
+                    printc(f"\n🔍 DETAILED RESULTS:", "yellow", True)
+                    results = data.get('detailed_results', [])
+                    for result in results[:10]:  # Show first 10 results
+                        name = result.get('name', 'Unknown')
+                        success = result.get('success', False)
+                        if success:
+                            printc(f"  ✅ {name}: Success", "green")
+                        else:
+                            error = result.get('error', 'Failed')
+                            printc(f"  ❌ {name}: {error[:40]}", "red")
+                    
+                    printc(f"\n👨‍💻 Developer: {data.get('developer', 'N/A')}", "gray")
+                    printc(f"🛠️ Powered by: {data.get('powered_by', 'N/A')}", "gray")
+                    
+                else:
+                    printc(f"❌ Bombing failed: {data.get('message', 'Unknown error')}", "red")
+                
+                printc("=" * 60, "green")
+                
+                save = input(cprint("\nSave bombing report? (y/n): ", "yellow")).lower()
+                if save == 'y':
+                    self.save_report(phone_number, data)
+            else:
+                printc(f"❌ API Error: {response.status_code}", "red")
+                
+        except Exception as e:
+            printc(f"Error: {str(e)}", "red")
+    
+    def save_report(self, phone_number, data):
+        """Save bombing report"""
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"BOMBING_{phone_number}_{timestamp}.json"
+        filepath = REPORTS_DIR / filename
+        
+        with open(filepath, 'w') as f:
+            json.dump({
+                'phone_number': phone_number,
+                'timestamp': datetime.now().isoformat(),
+                'result': data
+            }, f, indent=4)
+        
+        print_status(f"Report saved: {filepath}", "success")
 
 # ========== MODULE 1: REAL IP TRACKER ==========
 class RealIPTracker:
@@ -2188,6 +2518,7 @@ class EmailBreachChecker:
             self.save_report(email, breaches_found, hibp_url)
     
     def save_report(self, email, breaches, hibp_url):
+        """Save email breach report"""
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"BREACH_CHECK_{email.replace('@', '_at_')}_{timestamp}.txt"
         filepath = REPORTS_DIR / filename
@@ -2341,7 +2672,7 @@ class PasswordStrengthChecker:
         
         print_status(f"Hash reference saved: {filepath}", "success")
 
-# ========== NEW MODULE 15: WAYBACK MACHINE CHECKER ==========
+# ========== MODULE 15: WAYBACK MACHINE CHECKER ==========
 class WaybackChecker:
     def __init__(self):
         self.api_url = "http://archive.org/wayback/available"
@@ -2430,7 +2761,7 @@ class WaybackChecker:
         
         print_status(f"Results saved: {filepath}", "success")
 
-# ========== NEW MODULE 16: DNSDUMPSTER INTEGRATION ==========
+# ========== MODULE 16: DNSDUMPSTER INTEGRATION ==========
 class DNSDumpsterTool:
     def __init__(self):
         self.base_url = "https://dnsdumpster.com"
@@ -2548,7 +2879,7 @@ class DNSDumpsterTool:
         
         print_status(f"Report saved: {filepath}", "success")
 
-# ========== NEW MODULE 17: SHERLOCK-STYLE USERNAME SEARCH ==========
+# ========== MODULE 17: SHERLOCK-STYLE USERNAME SEARCH ==========
 class SherlockUsernameSearch:
     def __init__(self):
         self.platforms = {
@@ -2998,7 +3329,7 @@ class SherlockUsernameSearch:
         print_status(f"Results saved: {filepath}", "success")
         printc(f"📁 {len(results)} profiles found for @{username}", "green")
 
-# ========== NEW MODULE 18: TECH DETECTOR (BuiltWith/Wappalyzer Lite) ==========
+# ========== MODULE 18: TECH DETECTOR (BuiltWith/Wappalyzer Lite) ==========
 class TechDetector:
     def __init__(self):
         self.tech_signatures = {
@@ -3180,7 +3511,7 @@ class TechDetector:
         
         print_status(f"Report saved: {filepath}", "success")
 
-# ========== NEW MODULE 19: ABUSEIPDB CHECKER ==========
+# ========== MODULE 19: ABUSEIPDB CHECKER ==========
 class AbuseIPDBChecker:
     def __init__(self):
         self.api_url = "https://api.abuseipdb.com/api/v2/check"
@@ -3338,19 +3669,29 @@ class TermuxOSINTUltimate:
             '17': ("Sherlock Username Search", SherlockUsernameSearch().search),
             '18': ("Technology Detector", TechDetector().detect),
             '19': ("AbuseIPDB Checker", AbuseIPDBChecker().check),
-            '20': ("View Reports", self.view_reports),
-            '21': ("Install Dependencies", self.install_deps),
+            '20': ("Phone Number Details", PhoneNumberDetails().lookup),
+            '21': ("Vehicle RC Info", VehicleRCInfo().lookup),
+            '22': ("SMS/Call Bomber", SMSBomber().start_bombing),
+            '23': ("View Reports", self.view_reports),
+            '24': ("Install Dependencies", self.install_deps),
             '0': ("Exit", self.exit_tool)
         }
     
     def print_banner(self):
         clear()
         banner = r"""
-╔══════════════════════════════════════════════════════╗
-║      TERMUX OSINT ULTIMATE V2.0 - ftgamerv2          ║
-║      All-in-One Real OSINT Toolkit                   ║
-║      GitHub: ftgamer2                                ║
-╚══════════════════════════════════════════════════════╝
+ $$$$$$\            $$\                            $$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\ $$$$$$$$\ 
+$$  __$$\           $$ |                          $$  __$$\ $$  __$$\ \_$$  _|$$$\  $$ |\__$$  __|
+$$ /  \__|$$\   $$\ $$$$$$$\   $$$$$$\   $$$$$$\  $$ /  $$ |$$ /  \__|  $$ |  $$$$\ $$ |   $$ |   
+$$ |      $$ |  $$ |$$  __$$\ $$  __$$\ $$  __$$\ $$ |  $$ |\$$$$$$\    $$ |  $$ $$\$$ |   $$ |   
+$$ |      $$ |  $$ |$$ |  $$ |$$$$$$$$ |$$ |  \__|$$ |  $$ | \____$$\   $$ |  $$ \$$$$ |   $$ |   
+$$ |  $$\ $$ |  $$ |$$ |  $$ |$$   ____|$$ |      $$ |  $$ |$$\   $$ |  $$ |  $$ |\$$$ |   $$ |   
+\$$$$$$  |\$$$$$$$ |$$$$$$$  |\$$$$$$$\ $$ |       $$$$$$  |\$$$$$$  |$$$$$$\ $$ | \$$ |   $$ |   
+ \______/  \____$$ |\_______/  \_______|\__|       \______/  \______/ \______|\__|  \__|   \__|   
+          $$\   $$ |                                                                              
+          \$$$$$$  |                                                                              
+           \______/                                                                               
+                 TERMUX OSINT ULTIMATE V3.0 - ftgamerv2 | All-in-One OSINT Toolkit
         """
         printc(banner, "cyan", True)
         printc(f"📁 Reports: {REPORTS_DIR}", "blue")
@@ -3420,6 +3761,12 @@ class TermuxOSINTUltimate:
                 cat = "Tech Detection Reports"
             elif name.startswith("ABUSEIPDB_"):
                 cat = "AbuseIPDB Reports"
+            elif name.startswith("PHONE_DETAILS_"):
+                cat = "Phone Details Reports"
+            elif name.startswith("VEHICLE_RC_"):
+                cat = "Vehicle RC Reports"
+            elif name.startswith("BOMBING_"):
+                cat = "Bombing Reports"
             else:
                 cat = "Other Reports"
             
@@ -3502,7 +3849,7 @@ class TermuxOSINTUltimate:
             printc("\nInstallation complete!", "green")
     
     def exit_tool(self):
-        printc("\n👋 Thanks for using Termux OSINT Ultimate V2.0!", "green", True)
+        printc("\n👋 Thanks for using Termux OSINT Ultimate V3.0!", "green", True)
         printc("GitHub: ftgamer2", "gray")
         time.sleep(1)
         sys.exit(0)
@@ -3514,7 +3861,9 @@ class TermuxOSINTUltimate:
             printc("📱 MAIN MENU:", "cyan", True)
             printc("-" * 50, "cyan")
             
-            menu_order = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '0']
+            menu_order = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 
+                         '11', '12', '13', '14', '15', '16', '17', '18', '19',
+                         '20', '21', '22', '23', '24', '0']
             
             for key in menu_order:
                 if key in self.modules:
@@ -3531,7 +3880,8 @@ class TermuxOSINTUltimate:
                     printc(f"\n🚀 Launching: {name}", "cyan", True)
                     time.sleep(0.5)
                     
-                    if choice in ['1', '2', '3', '5', '7', '8', '9', '10', '11', '13', '15', '16', '17', '18', '19']:
+                    if choice in ['1', '2', '3', '5', '7', '8', '9', '10', '11', 
+                                 '13', '15', '16', '17', '18', '19', '20', '21', '22']:
                         if choice == '1':
                             ip = input(cprint("IP address (blank for your IP): ", "cyan")).strip()
                             func(ip if ip else None)
@@ -3583,7 +3933,16 @@ class TermuxOSINTUltimate:
                         elif choice == '19':
                             ip = input(cprint("IP for AbuseIPDB check: ", "cyan")).strip()
                             func(ip if ip else None)
-                    elif choice in ['6', '12', '14', '20', '21']:
+                        elif choice == '20':
+                            phone = input(cprint("Phone number for details: ", "cyan")).strip()
+                            func(phone if phone else None)
+                        elif choice == '21':
+                            vehicle = input(cprint("Vehicle number (KA01AB1234): ", "cyan")).strip()
+                            func(vehicle if vehicle else None)
+                        elif choice == '22':
+                            phone = input(cprint("Phone number for bombing: ", "cyan")).strip()
+                            func(phone if phone else None)
+                    elif choice in ['6', '12', '14', '23', '24']:
                         func()
                     else:
                         func()
