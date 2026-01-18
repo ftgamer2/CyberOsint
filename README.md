@@ -30,13 +30,11 @@
    - Complete phone number information
    - Name, address, father name, circle details
    - Alternative mobile numbers
-   - Customized with FTGAMER branding
 
 2. **🚗 Vehicle RC Information**
    - **Dual API Integration** for maximum accuracy
    - Comprehensive vehicle ownership details
    - Insurance, registration, RTO information
-   - Custom owner name (FTGAMER)
 
 3. **💣 SMS/Call Bomber (Educational Use Only)**
    - Multiple service bombing
