@@ -1,7 +1,5 @@
 # CyberOSINT 🔍
 
-**Ultimate Termux OSINT Toolkit | All-in-One Intelligence Suite**
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/ftgamer2/CyberOsint/main/assets/banner.jpg" alt="CyberOSINT Banner" width="800">
 </p>
@@ -17,36 +15,26 @@
 
 <p align="center">
   <strong>All-in-One Open Source Intelligence Toolkit for Android Termux</strong><br>
-  <em>Uncover digital footprints, analyze data, and conduct reconnaissance - All from your Android device</em>
+  <em>Uncover digital footprints, analyze data, and conduct reconnaissance — all from your Android device</em>
 </p>
 
-<hr>
+---
 
-## 🔥 **V3.0 Update - What's New?**
+## 🔥 What's New in V3.0
 
-### **🚀 Three Powerful New Modules:**
+Three powerful new modules have been added:
 
-1. **📱 Phone Number Details Lookup**
-   - Complete phone number information
-   - Name, address, father name, circle details
-   - Alternative mobile numbers
+**📱 Phone Number Details Lookup** — Complete phone number information including name, address, father name, circle details, and alternative mobile numbers.
 
-2. **🚗 Vehicle RC Information**
-   - **Dual API Integration** for maximum accuracy
-   - Comprehensive vehicle ownership details
-   - Insurance, registration, RTO information
+**🚗 Vehicle RC Information** — Dual API integration for maximum accuracy. Comprehensive vehicle ownership details including insurance, registration, and RTO information.
 
-3. **💣 SMS/Call Bomber (Educational Use Only)**
-   - Multiple service bombing
-   - Call, WhatsApp, and SMS capabilities
-   - Detailed success/failure statistics
-   - **WITH STRONG LEGAL WARNINGS**
+**💣 SMS/Call Bomber *(Educational Use Only)*** — Multi-service testing with call, WhatsApp, and SMS capabilities. Includes detailed success/failure statistics and **strong legal warnings**.
 
-<hr>
+---
 
-## 🌟 **Features**
+## 🌟 Features
 
-### **25+ Powerful OSINT Modules**
+### 25+ Powerful OSINT Modules
 
 | # | Module | Description | Status |
 |---|--------|-------------|--------|
@@ -75,22 +63,22 @@
 | 23 | View Reports | Browse saved investigation reports | ✅ |
 | 24 | Install Dependencies | One-click setup for all requirements | ✅ |
 
-### **✨ Key Advantages**
+### ✨ Key Advantages
 
-- **25+ Modules** - Most comprehensive Termux OSINT toolkit
-- **No API Keys Required** - Works without external APIs
-- **Termux Optimized** - Designed specifically for Android Termux
-- **Beautiful UI** - Colorful terminal interface with dynamic ASCII banner
-- **Auto-Save Reports** - All results saved in organized directories
-- **Multi-Threaded** - Fast operations with parallel processing
-- **Privacy Focused** - No data logging, runs locally
-- **Educational Focus** - Perfect for learning OSINT techniques
+- **25+ Modules** — Most comprehensive Termux OSINT toolkit available
+- **No API Keys Required** — Works without external API registration
+- **Termux Optimized** — Designed specifically for Android Termux
+- **Beautiful UI** — Colorful terminal interface with dynamic ASCII banner
+- **Auto-Save Reports** — All results saved in organized directories
+- **Multi-Threaded** — Fast operations with parallel processing
+- **Privacy Focused** — No data logging, runs locally
+- **Educational Focus** — Perfect for learning OSINT techniques
 
-<hr>
+---
 
-## 🚀 **Quick Start**
+## 🚀 Quick Start
 
-### **One-Command Installation**
+### One-Command Installation
 
 ```bash
 # Clone the repository
@@ -103,15 +91,14 @@ cd CyberOsint
 python cyberosint.py
 ```
 
-What's Included
+**What's included:**
+- 25+ OSINT modules — from IP tracking to vehicle RC lookup
+- Termux-optimized — works perfectly on Android
+- Colorful UI — easy-to-use menu system
+- Auto-reporting — all findings saved automatically
+- Multi-source verification — cross-check data from multiple APIs
 
-· 25+ OSINT modules - From IP tracking to vehicle RC lookup
-· Termux-optimized - Works perfectly on Android
-· Colorful UI - Easy-to-use menu system
-· Auto-reporting - All findings saved automatically
-· Multi-source verification - Cross-check data from multiple APIs
-
-Manual Installation
+### Manual Installation
 
 ```bash
 # Update Termux
@@ -130,11 +117,11 @@ pip install requests beautifulsoup4 phonenumbers python-whois dnspython Pillow
 python cyberosint.py
 ```
 
-<hr>
+---
 
-📱 Usage
+## 📱 Usage
 
-Starting the Tool
+### Starting the Tool
 
 ```bash
 # After cloning
@@ -147,14 +134,14 @@ source ~/.bashrc
 cyberosint
 ```
 
-New Features Demo
+### New Features Demo
 
 ```bash
 # 1. Phone Number Details
 Enter phone number: 6205075067
 # Shows: Name, Address, Father Name, Circle, Alt Mobile
 
-# 2. Vehicle RC Information  
+# 2. Vehicle RC Information
 Enter vehicle number: KA01AB1234
 # Uses TWO APIs for verification
 # Shows: Owner, Model, RTO, Insurance, Registration Date
@@ -165,14 +152,14 @@ Enter phone number: 9805696906
 # Tests multiple services with statistics
 ```
 
-Example Commands
+### Example Commands
 
 ```bash
 # Track IP address
 Enter IP: 8.8.8.8
 # Shows: Country, ISP, Location, Coordinates
 
-# Search username  
+# Search username
 Username: johndoe
 # Checks: GitHub, Twitter, Instagram, Facebook, etc.
 
@@ -181,121 +168,72 @@ Domain: example.com
 # Shows: WHOIS, DNS records, SSL, Subdomains
 ```
 
-Reports & Output
+### Reports & Output
 
-All reports are automatically saved to organized directories:
+All reports are automatically saved to:
 
 ```
 ~/storage/shared/OSINT_Reports/
-OR
+  OR
 ~/CyberOsint/OSINT_Reports/
 ```
 
-Report Categories:
+**Categories:** IP · Username · Email · Instagram · Domain · Phone · Vehicle RC · Bombing (Educational) · and more
 
-· IP Reports
-· Username Reports
-· Email Reports
-· Instagram Reports
-· Domain Reports
-· Phone Reports
-· Vehicle RC Reports
-· Bombing Reports (Educational)
-· And more...
+**Formats:** JSON for structured data · TXT for quick viewing · Organized by date and module
 
-Formats:
+---
 
-· JSON for structured data
-· TXT for quick viewing
-· Organized by date and module
+## 🛠️ Modules Overview
 
-<hr>
+### New in V3.0
 
-🛠️ Modules Overview
+**📱 Phone Number Details**
+- Complete personal information lookup
+- Address and location details
+- Family information & service provider data
+- Circle details via custom FTGAMER integration
 
-New in V3.0
+**🚗 Vehicle RC Information**
+- Dual API verification for accuracy
+- Comprehensive ownership, insurance & registration details
+- RTO and jurisdictional data
+- Custom owner name modification
 
-📱 Phone Number Details
+**💣 SMS/Call Testing Tool *(Educational)***
+- Multi-service testing with call, WhatsApp & SMS
+- Detailed success/failure statistics
+- Strong legal warnings enforced
+- For authorized testing only
 
-· Complete personal information lookup
-· Address and location details
-· Family information
-· Service provider and circle data
-· Custom FTGAMER integration
+### Core Modules
 
-🚗 Vehicle RC Information
+**IP Intelligence** — Real-time geolocation, ISP & organization info, connection type and proxy detection, multi-source aggregation
 
-· Dual API verification for accuracy
-· Comprehensive ownership details
-· Insurance and registration information
-· RTO and jurisdictional data
-· Custom owner name modification
+**Digital Footprint Analysis** — Cross-platform username checking, social media profile discovery, email pattern analysis and verification
 
-💣 SMS/Call Testing Tool (Educational)
+**Media Analysis** — Image metadata extraction (EXIF), reverse image search across 5+ engines, GPS coordinate extraction, camera and device info
 
-· Multi-service testing capabilities
-· Call, WhatsApp, and SMS testing
-· Detailed success/failure statistics
-· STRONG LEGAL WARNINGS
-· For authorized testing only
+**Domain & Network Recon** — WHOIS lookup, DNS record enumeration, SSL certificate analysis, subdomain discovery, technology stack detection
 
-IP Intelligence
+**Phone Intelligence** — Carrier & operator identification, geographic location approximation, number validation and reverse lookup
 
-· Real-time geolocation tracking
-· ISP and organization information
-· Connection type and proxy detection
-· Multiple data source aggregation
+**Security Tools** — Password strength analysis, hash generation & comparison, email breach checking, security header analysis
 
-Digital Footprint Analysis
+---
 
-· Cross-platform username checking
-· Social media profile discovery
-· Email address pattern analysis
-· Profile verification and validation
-
-Media Analysis
-
-· Image metadata extraction (EXIF)
-· Reverse image search across 5+ engines
-· GPS coordinate extraction and mapping
-· Camera and device information
-
-Domain & Network Recon
-
-· WHOIS information lookup
-· DNS record enumeration
-· SSL certificate analysis
-· Subdomain discovery
-· Technology stack detection
-
-Phone Intelligence
-
-· Carrier and operator identification
-· Geographic location approximation
-· Number validation and formatting
-· Reverse lookup capabilities
-
-Security Tools
-
-· Password strength analysis
-· Hash generation and comparison
-· Email breach checking
-· Security header analysis
-
-<hr>
-
-📁 Project Structure
+## 📁 Project Structure
 
 ```
 CyberOsint/
 ├── cyberosint.py           # Main script (25 modules)
-├── setup.sh               # Installation script (if needed)
-├── requirements.txt       # Python dependencies
-├── README.md             # This documentation
-├── .gitignore           # Git ignore rules
+├── setup.sh                # Installation script
+├── requirements.txt        # Python dependencies
+├── README.md               # This documentation
+├── .gitignore              # Git ignore rules
 ├── assets/
-│   └── banner.jpg       # Repository banner
-└── OSINT_Reports/       # Auto-generated reports
+│   └── banner.jpg          # Repository banner
+└── OSINT_Reports/          # Auto-generated reports
     ├── IP_*.json
     ├── USERNAME_*.json
     ├── VEHICLE_RC_*.json
@@ -303,214 +241,143 @@ CyberOsint/
     └── BOMBING_*.json
 ```
 
-<hr>
+---
 
-🎨 Terminal Banner
-
-Banner Preview:
+## 🎨 Terminal Banner
 
 ```
- $$$$$$\            $$\                            $$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\ $$$$$$$$\ 
+ $$$$$$\            $$\                            $$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\ $$$$$$$$\
 $$  __$$\           $$ |                          $$  __$$\ $$  __$$\ \_$$  _|$$$\  $$ |\__$$  __|
-$$ /  \__|$$\   $$\ $$$$$$$\   $$$$$$\   $$$$$$\  $$ /  $$ |$$ /  \__|  $$ |  $$$$\ $$ |   $$ |   
-$$ |      $$ |  $$ |$$  __$$\ $$  __$$\ $$  __$$\ $$ |  $$ |\$$$$$$\    $$ |  $$ $$\$$ |   $$ |   
-$$ |      $$ |  $$ |$$ |  $$ |$$$$$$$$ |$$ |  \__|$$ |  $$ | \____$$\   $$ |  $$ \$$$$ |   $$ |   
-$$ |  $$\ $$ |  $$ |$$ |  $$ |$$   ____|$$ |      $$ |  $$ |$$\   $$ |  $$ |  $$ |\$$$ |   $$ |   
-\$$$$$$  |\$$$$$$$ |$$$$$$$  |\$$$$$$$\ $$ |       $$$$$$  |\$$$$$$  |$$$$$$\ $$ | \$$ |   $$ |   
- \______/  \____$$ |\_______/  \_______|\__|       \______/  \______/ \______|\__|  \__|   \__|   
-          $$\   $$ |                                                                              
-          \$$$$$$  |                                                                              
-           \______/                                                                               
+$$ /  \__|$$\   $$\ $$$$$$$\   $$$$$$\   $$$$$$\  $$ /  $$ |$$ /  \__|  $$ |  $$$$\ $$ |   $$ |
+$$ |      $$ |  $$ |$$  __$$\ $$  __$$\ $$  __$$\ $$ |  $$ |\$$$$$$\    $$ |  $$ $$\$$ |   $$ |
+$$ |      $$ |  $$ |$$ |  $$ |$$$$$$$$ |$$ |  \__|$$ |  $$ | \____$$\   $$ |  $$ \$$$$ |   $$ |
+$$ |  $$\ $$ |  $$ |$$ |  $$ |$$   ____|$$ |      $$ |  $$ |$$\   $$ |  $$ |  $$ |\$$$ |   $$ |
+\$$$$$$  |\$$$$$$$ |$$$$$$$  |\$$$$$$$\ $$ |       $$$$$$  |\$$$$$$  |$$$$$$\ $$ | \$$ |   $$ |
+ \______/  \____$$ |\_______/  \_______|\__|        \______/  \______/ \______|\__|  \__|   \__|
+          $$\   $$ |
+          \$$$$$$  |
+           \______/
 ```
 
-Dynamic Features:
+**Dynamic Features:** Rainbow color cycling · Terminal size adaptation · Multiple display modes (lolcat, quick) · Auto-centering for all screen sizes
 
-· Rainbow color cycling
-· Terminal size adaptation
-· Multiple display modes (lolcat, quick)
-· Center alignment for all screen sizes
+---
 
-<hr>
+## ⚙️ Technical Details
 
-⚙️ Technical Details
+### Requirements
 
-Requirements
+- Android device with Termux
+- Internet connection & storage permissions
+- Python 3.8+
 
-· Android device with Termux
-· Internet connection
-· Storage permissions
-· Python 3.8+
+### Dependencies
 
-Dependencies
+```
+# Core (auto-installed)
+requests, beautifulsoup4, phonenumbers, python-whois, dnspython, Pillow
 
-```txt
-# Core dependencies (auto-installed)
-requests, beautifulsoup4, phonenumbers
-python-whois, dnspython, Pillow
-
-# Optional tools
-exiftool (for image analysis)
-nmap (for network scanning)
-toutatis (for Instagram advanced)
+# Optional
+exiftool    # for image analysis
+nmap        # for network scanning
+toutatis    # for Instagram advanced
 ```
 
-Compatibility
+### Compatibility
 
-· ✅ Android 7+ with Termux
-· ✅ Rooted & Non-rooted devices
-· ✅ ARM, ARM64, x86 architectures
-· ✅ WiFi & Mobile data connections
-· ✅ All screen sizes (responsive UI)
+| Platform | Support |
+|----------|---------|
+| Android 7+ with Termux | ✅ |
+| Rooted & Non-rooted devices | ✅ |
+| ARM, ARM64, x86 architectures | ✅ |
+| WiFi & Mobile data | ✅ |
+| All screen sizes (responsive UI) | ✅ |
 
-API Integrations
+### API Integrations
 
-New APIs in V3.0:
+**New in V3.0:**
+- `https://check-api-sigma.vercel.app` — Phone number details
+- `http://toji-rc.vercel.app/api` — Vehicle RC (API 1)
+- `http://Tobi-rc-api.vercel.app` — Vehicle RC (API 2)
+- `https://toji-bomber.vercel.app` — SMS/Call testing
 
-· https://check-api-sigma.vercel.app - Phone number details
-· http://toji-rc.vercel.app/api - Vehicle RC information (API 1)
-· http://Tobi-rc-api.vercel.app - Vehicle RC information (API 2)
-· https://toji-bomber.vercel.app - SMS/Call testing tool
+**Existing:** Abbas APIs for IP, Instagram, IFSC lookup · Various public APIs · No API keys required for core functionality
 
-Existing APIs:
+---
 
-· Abbas APIs for IP, Instagram, IFSC lookup
-· Various public APIs for validation
-· No API keys required for core functionality
+## 🤝 Contributing
 
-<hr>
+Contributions are welcome!
 
-🤝 Contributing
+**Reporting Issues** — Found a bug? Open an issue on GitHub.
 
-We welcome contributions! Here's how you can help:
-
-Reporting Issues
-
-Found a bug? Open an issue
-
-Adding Features
-
+**Adding Features:**
 1. Fork the repository
-2. Create a feature branch (git checkout -b feature/AmazingFeature)
-3. Commit changes (git commit -m 'Add AmazingFeature')
-4. Push to branch (git push origin feature/AmazingFeature)
+2. Create a feature branch: `git checkout -b feature/AmazingFeature`
+3. Commit your changes: `git commit -m 'Add AmazingFeature'`
+4. Push to branch: `git push origin feature/AmazingFeature`
 5. Open a Pull Request
 
-Development Guidelines
+**Development Guidelines:** Follow existing code style · Add comments for complex logic · Test on Termux before submitting · Update documentation · Include legal disclaimers for new modules
 
-· Follow existing code style
-· Add comments for complex logic
-· Test on Termux before submitting
-· Update documentation if needed
-· Include legal disclaimers for new modules
+---
 
-<hr>
+## ⚠️ Legal & Ethical Use
 
-⚠️ CRITICAL LEGAL & ETHICAL USE
+> **CRITICAL WARNING** — The SMS/Call Bomber module is for **EDUCATIONAL PURPOSES ONLY**
 
-STRONG WARNING FOR NEW MODULES
+### Authorized Use Cases
+- ✅ Security research and education
+- ✅ Testing your own systems and accounts
+- ✅ Authorized penetration testing
+- ✅ Learning OSINT techniques
+- ✅ Digital forensics training
+- ✅ **Only on numbers you own or have explicit written permission to test**
 
-The SMS/Call Bomber module is for EDUCATIONAL PURPOSES ONLY
+### Prohibited Activities
+- ❌ Unauthorized system access
+- ❌ Privacy violation or harassment
+- ❌ Stalking or illegal surveillance
+- ❌ Data theft or fraud
+- ❌ Sending unsolicited communications
+- ❌ Violating telecommunications laws
 
-Authorized Use Cases
+### Legal Disclaimer
 
-· ✅ Security research and education
-· ✅ Testing your own systems and accounts
-· ✅ Authorized penetration testing
-· ✅ Learning OSINT techniques
-· ✅ Digital forensics training
-· ✅ ONLY on numbers you own or have explicit written permission
-
-Prohibited Activities
-
-· ❌ Unauthorized system access
-· ❌ Privacy violation or harassment
-· ❌ Stalking or illegal surveillance
-· ❌ Data theft or fraud
-· ❌ Sending unsolicited communications
-· ❌ Violating telecommunications laws
-
-Legal Disclaimer
-
-The author (ftgamer2) is NOT RESPONSIBLE for any misuse of this tool. Users must:
+The author (ftgamer2) is **NOT RESPONSIBLE** for any misuse of this tool. By using this tool, you agree to:
 
 1. Comply with all applicable laws (Telecom Regulations, IT Act, etc.)
 2. Obtain proper authorization before any testing
 3. Use only for legitimate security research
 4. Respect privacy and consent
-5. Understand that misuse may result in legal consequences
+5. Accept full responsibility for your actions
 
-By using this tool, you agree to these terms and accept full responsibility for your actions.
+---
 
-<hr>
+## 🙏 Acknowledgments
 
-📜 License
+**Core Credits**
+- **ftgamer2** — Project creator & maintainer
+- **Termux Community** — Android terminal support
+- **Contributors** — Everyone who helped improve this project
+- **API Providers** — For free access to their services
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+**New API Credits (V3.0)**
+- **@Ros3_Zii** — Phone number details API
+- **Toji** — Vehicle RC API & SMS testing tool
+- **Paras Chourasiya** — Alternative Vehicle RC API
 
-```
-MIT License
-Copyright (c) 2026 ftgamer2
-```
+**Special Thanks** — Abbas API · Sherlock Project · OSINT community · GitHub
 
-Permissions
+---
 
-· Commercial use
-· Modification
-· Distribution
-· Private use
+## 📞 Contact & Support
 
-Conditions
+- **GitHub:** [ftgamer2](https://github.com/ftgamer2)
+- **Repository:** [CyberOsint](https://github.com/ftgamer2/CyberOsint)
+- **Issues:** [GitHub Issues](https://github.com/ftgamer2/CyberOsint/issues)
 
-· Include copyright notice
-· Include license copy
-
-Limitations
-
-· No liability
-· No warranty
-
-<hr>
-
-🙏 Acknowledgments
-
-Credits
-
-· ftgamer2 - Project creator & maintainer
-· Termux Community - Android terminal support
-· Open Source Tools - Various libraries and utilities
-· Contributors - Everyone who helped improve this project
-· API Providers - For free access to their services
-
-New API Credits (V3.0)
-
-· @Ros3_Zii - Phone number details API
-· Toji - Vehicle RC API & SMS testing tool
-· Paras Chourasiya - Alternative Vehicle RC API
-
-Special Thanks
-
-· Abbas API for free services
-· Sherlock Project for inspiration
-· OSINT community for techniques
-· GitHub for hosting
-
-Support the Project
-
-If you find this tool useful, please:
-
-· ⭐ Star the repository
-· 🐛 Report issues
-· 💡 Suggest features
-· 🔄 Share with others
-· 📖 Follow for updates
-
-<hr>
-
-📞 Contact & Support
-
-· GitHub: ftgamer2
-· Repository: CyberOsint
-· Issues: GitHub Issues
+---
 
 <p align="center">
   <strong>Made with ❤️ by ftgamer2</strong><br>
@@ -518,18 +385,14 @@ If you find this tool useful, please:
   <img src="https://komarev.com/ghpvc/?username=ftgamer2&label=Repository+Views&color=blue&style=flat" alt="Repository Views">
 </p>
 
-<hr>
+---
 
-⭐ Star this repo if you find it useful! ⭐
+<p align="center">
+  ⭐ <strong>Star this repo if you find it useful!</strong> ⭐<br><br>
+  <em>"Knowledge is power. Use it responsibly."</em><br><br>
+  🛡️ Respect Privacy &nbsp;·&nbsp; ⚖️ Follow Laws &nbsp;·&nbsp; 🎓 Learn Ethically &nbsp;·&nbsp; 🤝 Help Others &nbsp;·&nbsp; 🔒 Stay Secure
+</p>
 
-"Knowledge is power. Use it responsibly."
+---
 
-Remember:
-
-· 🛡️ Respect Privacy
-· ⚖️ Follow Laws
-· 🎓 Learn Ethically
-· 🤝 Help Others
-· 🔒 Stay Secure
-
-Updated: January 2026 | Version 3.0 | 25+ Modules
+*Updated: January 2026 | Version 3.0 | 25+ Modules*
