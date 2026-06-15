@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <b>All-in-One OSINT Toolkit</b> — 40+ reconnaissance modules, cross-platform, zero API keys.
+  <b>All-in-One OSINT Toolkit</b> — 40+ reconnaissance modules, cross-platform.
 </p>
 
 ---
@@ -22,7 +22,7 @@
 ## Features
 
 - **40+ modules** — IP, domains, social media, phone, Indian OSINT, data analysis, gaming lookups
-- **No API keys** — all modules use public/free sources
+- **Public APIs** — all modules use free/public sources, no signup required
 - **Cross-platform** — works on Windows, Android (Termux), Linux
 - **Live spinners** — real-time loading indicators for all network operations
 - **Auto-reporting** — JSON/TXT reports saved to organized directories
