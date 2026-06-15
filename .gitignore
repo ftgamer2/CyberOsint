@@ -1,0 +1,8 @@
+OSINT_Reports/
+backup/
+_test_all.py
+_test.py
+__pycache__/
+*.pyc
+*.pyo
+.env
